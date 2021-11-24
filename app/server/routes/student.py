@@ -2,7 +2,7 @@ from fastapi import APIRouter, Body
 from fastapi.encoders import jsonable_encoder
 
 # import functions for rout actions from databse.py file
-from server.database import (
+from app.server.database import (
     add_student,
     delete_student,
     retrieve_student,
@@ -11,7 +11,7 @@ from server.database import (
 )
 
 # import schemas and model from student model
-from server.models.student import (
+from app.server.models.student import (
     ErrorResponseModel,
     ResponseModel,
     StudentSchema,
