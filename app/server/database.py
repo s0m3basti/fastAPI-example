@@ -1,7 +1,7 @@
 import motor.motor_asyncio # handels database connection to mongo
 from bson.objectid import ObjectId # package to handel the ids from mongo
 
-MONGO_DETAILS = "mongodb://localhost:27017"
+MONGO_DETAILS = "mongodb://localhost:1234"
 
 client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_DETAILS) # connect to database
 
